@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test17.html</title>
+    <style>
+        #layer1 {
+            width: 600px;
+            height: 400px;
+            /* background-color: aqua; */
+            background-image: url("../images/5.jpg");
+        }
+        #tdl1, #tdl2 {
+            border: 1px solid black;
+            width: 600px;
+            height: 400px;
+        }
+        #tdl1 {
+            background-color: green;
+            background-image: url("../images/5.jpg");
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+        #tdl2 {
+            border: 5px solid blue;
+            border-collapse: collapse;
+        }
+        #tvc {
+            background-image: url("../images/5.jpg");
+        }
+        td {
+            border: 1px solid blue;
+            text-align: center;
+            margin: opx;
+            padding: 0px;
+        }
+        .tra {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="later1"></div>
+    <table id="tdl1">
+        <tr>
+            <td></td>   
+        </tr>
+    </table>
+    <table id="tdl2">
+        <tr class="tra">
+            <td style="width:25%">1</td>
+            <td style="width:25%">2</td>
+            <td style="width:50%">3</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>22</td>
+            <td>33</td>
+        </tr>
+        <tr class="tbc">
+            <td>21</td>
+            <td>22</td>
+            <td id="tvc">23</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
