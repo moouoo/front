@@ -1,0 +1,36 @@
+#textSize {
+    width: 250px;
+    height: 30px;
+    left: 65px;
+    position: relative;
+    
+}
+#logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+    vertical-align:middle;  
+}
+#list_2 {
+    text-align: center;
+}
+#eraser {
+    list-style: none;
+}
+.list_1 {
+    text-align: right;
+    padding: 10px;
+    margin-right: 50px;
+    position: relative;
+    top: 20px
+}
+.center {
+    display: block;
+    margin: 0 auto;
+}
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+}
