@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+
+ul, .container {
+  list-style-type: none;
+  padding: 0px;
+  border: 2px solid black;
+
+  display: grid;
+  height: 500px;
+
+  /* grid-template-columns: 100px 1fr 1fr;
+  grid-template-rows: 200px 2fr 1fr;
+
+  gap: 20px 10px; */
+
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(2, minmax(200px, auto));    /* 2개 열의 최소크기를 200px로 하겠다는 뜻 */
+  grid-template-rows: repeat(2, minmax(3, 1fr));   /* 3이 먼뜻이여? */
+
+  gap: 10px
+}
+
+li {
+  background-color: rosybrown;
+}
+li:nth-child(2n) {
+  background-color: rebeccapurple;
+}
