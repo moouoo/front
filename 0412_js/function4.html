@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 안에 값 넘겨 호출하기</title>
+    <script>
+        document.write("안녕111<br/>");
+        atom1();
+        
+        function atom1() {
+            document.write("이곳은 atom1함수 안 입니다. <br/>")
+        };
+        
+        atom1();
+        document.write("안녕222<br/>");
+        //atom2();
+    </script>
+</head>
+<body>
+    <h2>자바스크립트 함수를 사용한 출력</h2>
+    
+    <script>
+        document.write("안녕333<br/>");
+        atom1();
+
+        function atom2(mbc) {
+            document.write("mbc : " + mbc + "<br />")
+            document.write("이곳은 atom2함수 안 입니다.<br/>")
+            atom1(); // 함수 안에서 함수 호출
+        };
+        atom2(100);
+    </script>
+</body>
+</html>
