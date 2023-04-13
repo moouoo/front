@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test7.html</title>
+  <script>
+    'use strict';
+
+    function diviceCheck() {
+      let str = "";
+      str += "화면해상도 가로크기 : " + window.screen.width + "px<br />";
+      str += "화면해상도 세로크기 : " + window.screen.height + "px<br />";
+      demo.innerHTML = str;
+    }
+
+    function newWindow() {
+      let garo = document.getElementById("garo").value.trim();
+      let sero = document.getElementById("sero").value.trim();
+      
+      if(garo < 300) {
+        garo = 300;
+      }
+      if(sero < 200) {
+        sero = 200;
+      }
+
+      if(garo == ""){
+        garo = window.screen * (3/2);
+      }
+      if(sero == ""){
+        sero = window.screen * (2/3);
+      }
+      
+      let winName = "winName";
+      let opt = "width=735px, height=435px, left= 367px, top=237px";
+      let url = "minWinOpen.html";
+      window.open(url, winName, opt);
+    }
+    // ???????
+  </script>
+</head>
+
+<body>
+  <h2>새창 띄우기(window.open())</h2>
+  <input type="text" value="가로크기" id="garo"/>
+  <input type="text" value="세로크기" id="sero"/>
+  <input type="button" value="현재 해상도크기" onclick="diviceCheck()" />
+  <input type="button" value="새창띄우기" onclick="newWindow()" />
+</body>
+  <div id="demo"></div>
+</html>
